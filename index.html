@@ -10,27 +10,32 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">
-            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Game<span>/></span>
-        </a>
-        <div class="menuToggle" onclick="toggleMenu()">
-        </div>
-        <ul class="navigation">
-            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#games" onclick="toggleMenu()">Game</a></li>
-            <li><a href="#merchandise" onclick="toggleMenu()">Merchandise</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+<nav style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999; background: #333; display: flex; align-items: center; justify-content: space-between; padding: 10px 40px;">
+    <!-- The small grey top line -->
+    <div style="background-color: grey; height: 5px; width: 100%; position: absolute; top: 0; left: 0;"></div>
 
-        </ul>
-    </nav>
+    <!-- Logo -->
+    <a href="#" class="logo" style="color: white; font-size: 1.5em; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+        <box-icon name="game" type="solid" color="#00FFFF"></box-icon> 
+        X<span style="color: #00FFFF;"> and O</span>
+    </a>
+
+    <!-- Menu -->
+    <div class="menuToggle" onclick="toggleMenu()" style="cursor: pointer; display: none;">
+        <!-- You can put an icon or ☰ here -->
+    </div>
+
+    <ul class="navigation" style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;">
+        <li><a href="#banner" onclick="toggleMenu()" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="#merchandise" onclick="toggleMenu()" style="color: white; text-decoration: none;">Game Modes</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" style="color: white; text-decoration: none;">Contact</a></li>
+    </ul>
+</nav>
+
+   
     <section class="banner" id="banner">
         <div class="content">
-            <h2>
-                A Game Is The Complete Exploration Of Freedom Within A Restrictive Environment
-            </h2>
-            <p>Lorem ipsum dolor sit amet consectetur tenetur repellat. Soluta rerum nesciunt autem. At asperiores.</p>
             <div id="section10" class="demo">
                 <a href="#about"><span></span></a>
             </div>
@@ -49,83 +54,13 @@
                     stroke="66"
                     style="width: 50px;height: 50px;margin-top: -10px;">
                 </lord-icon>About <span>Us</span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quo illum iusto labore consequuntur, repudiandae quasi officia, aut provident similique corrupti eum quibusdam corporis assumenda. Similique, vel reprehenderit numquam voluptas repellat voluptatem et omnis! Odio, ex adipisci maxime maiores sunt deleniti labore consequuntur accusamus voluptate!</br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia magni consectetur inventore, quisquam soluta maiores culpa illo est distinctio expedita ad aliquid. Enim odit, blanditiis temporibus sunt non impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi ipsam aperiam cumque nesciunt ea tempora! In, totam? Porro exercitationem dolor voluptatem alias accusamus iure consectetur iste vero eaque id?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, corrupti quis sunt magnam dolorum accusantium inventore earum placeat quos, non rem vero ipsam neque dolore sed? Cupiditate incidunt porro laudantium.</br></br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dicta facere iste qui velit autem, accusantium cumque pariatur expedita consequuntur optio quis eaque delectus quod similique, magni beatae a earum inventore sit perspiciatis. Mollitia, itaque?</p>
-            </div>
-            <div class="col50">
-                <div class="imgBx">
-                    <img src="media/ab.jpg" alt="">
-                </div>
+                <p>X and O (TicTacToe Game) is a modern twist on the classic 3×3 grid challenge — a game of focus, logic, and bragging rights. Designed for both casual and competitive players, it brings a clean, minimal feel mixed with online power-ups, tournaments, and friendly duels.
+Whether you’re going head-to-head with your buddy, testing your skills against AI, or competing in global tournaments, X and O turns a simple board into a battlefield of wits.
+</p>
             </div>
         </div>
     </section>
     <!-- ------ -->
-
-
-    <!-- ganes -->
-    <section id="games" class="game">
-        <div class="title">
-            <lord-icon
-                src="https://cdn.lordicon.com/ibgjiwvi.json"
-                trigger="loop"
-                colors="primary:#00ffff,secondary:#ffffff"
-                style="width: 50px;height: 50px;">
-            </lord-icon>
-            <h2 class="title-text"><span>G</span>ames</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam fugiat nemo qui.</p>
-        </div>
-        <div class="content">
-            <div class="box" data-aos="flip-left">
-                <div class="imgBx">
-                    <img src="media/games/bgmi.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Battlegrounds Mobile India</h3>
-                </div>
-            </div>
-            <div class="box" data-aos="flip-right">
-                <div class="imgBx">
-                    <img src="media/games/cod.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Call Of Duty:Mobile</h3>
-                </div>
-            </div>
-            <div class="box" data-aos="flip-left">
-                <div class="imgBx">
-                    <img src="media/games/minecraft.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Minecraft</h3>
-                </div>
-            </div>
-            <div class="box" data-aos="flip-right">
-                <div class="imgBx">
-                    <img src="media/games/lords.png" alt="">
-                </div>
-                <div class="text">
-                    <h3>Lords Mobile</h3>
-                </div>
-            </div>
-            <div class="box" data-aos="flip-left">
-                <div class="imgBx">
-                    <img src="media/games/pokemon.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Pokemob Unite</h3>
-                </div>
-            </div>
-            <div class="box" data-aos="flip-right">
-                <div class="imgBx">
-                    <img src="media/games/freefire.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Garena Free Fire</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <!-- ----- -->
 
     <!-- merchandise  -->
     <section class="merchandise" id="merchandise">
@@ -136,8 +71,7 @@
                 colors="primary:#00ffff,secondary:#ffffff"
                 style="width: 50px;height: 50px;">
             </lord-icon>
-            <h2 class="title-text">Gaming <span>Merchandise</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam fugiat nemo qui.</p>
+            <h2 class="title-text">Game<span>Modes</span></h2>
         </div>
         <div class="content">
             <div class="box box-1" data-aos="zoom-out-down">
@@ -145,30 +79,28 @@
                     <img src="media/merchandise/streak-hoodie.jpg" alt="">
                 </div>
                 <div class="text">
-                    <h3>Hoodies</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque debitis vel aut nam voluptatibus veniam quam deserunt dicta soluta?</p>
+                    <h3>Local play</h3>
+                    <p>Two players on one device — quick and classic fun.
+</p>
                 </div>
-                <a href="#" class="know">Know More</a>
             </div>
             <div class="box box-2" data-aos="zoom-out-down">
                 <div class="imgBx">
                     <img src="media/merchandise/mask.jpg" alt="">
                 </div>
                 <div class="text">
-                    <h3>Mask</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque debitis vel aut nam voluptatibus veniam quam deserunt dicta soluta?</p>
+                    <h3>VS AI</h3>
+                    <p>Play against the computer as you progress into tougher levels. </p>
                 </div>
-                <a href="#" class="know">Know More</a>
             </div>
             <div class="box box-3" data-aos="zoom-out-down">
                 <div class="imgBx">
                     <img src="media/merchandise/mobile-collabs.jpg" alt="">
                 </div>
                 <div class="text">
-                    <h3>T-shirts</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque debitis vel aut nam voluptatibus veniam quam deserunt dicta soluta?</p>
+                    <h3>Play with Friends</h3>
+                    <p>Challenge your friends in local multiplayer mode and see who comes out on top!</p>
                 </div>
-                <a href="#" class="know">Know More</a>
             </div>
     </section>
     <!-- ----- -->
