@@ -10,28 +10,20 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-<nav style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999; background: #333; display: flex; align-items: center; justify-content: space-between; padding: 10px 40px;">
-    <!-- The small grey top line -->
-    <div style="background-color: grey; height: 5px; width: 100%; position: absolute; top: 0; left: 0;"></div>
+  <nav>
+        <a href="#" class="logo">
+            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>X <span>And</span><span>O</span>
+        </a>
+        <div class="menuToggle" onclick="toggleMenu()">
+        </div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#games" onclick="toggleMenu()">Game</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
-    <!-- Logo -->
-    <a href="#" class="logo" style="color: white; font-size: 1.5em; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-        <box-icon name="game" type="solid" color="#00FFFF"></box-icon> 
-        X<span style="color: #00FFFF;"> and O</span>
-    </a>
-
-    <!-- Menu -->
-    <div class="menuToggle" onclick="toggleMenu()" style="cursor: pointer; display: none;">
-        <!-- You can put an icon or ☰ here -->
-    </div>
-
-    <ul class="navigation" style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;">
-        <li><a href="#banner" onclick="toggleMenu()" style="color: white; text-decoration: none;">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu()" style="color: white; text-decoration: none;">About</a></li>
-        <li><a href="#merchandise" onclick="toggleMenu()" style="color: white; text-decoration: none;">Game Modes</a></li>
-        <li><a href="#contact" onclick="toggleMenu()" style="color: white; text-decoration: none;">Contact</a></li>
-    </ul>
-</nav>
+        </ul>
+    </nav>
 
    
     <section class="banner" id="banner">
